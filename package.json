@@ -1,0 +1,14 @@
+{
+  "name": "decodelabs-backend",
+  "version": "1.0.0",
+  "description": "DecodeLabs Internship - Project 2 & 3: Backend API + MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "mongoose": "^8.24.0"
+  }
+}
