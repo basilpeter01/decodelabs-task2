@@ -1,6 +1,6 @@
 # DecodeLabs | Project 2 — Backend API
 
-Node.js + Express backend for the DecodeLabs Intern Portal.
+Node.js + Express backend.
 
 ---
 
@@ -12,6 +12,7 @@ Node.js + Express backend for the DecodeLabs Intern Portal.
 | `POST` | `/api/login` | `{ username, password }` | Log in |
 | `POST` | `/api/logout` | — | Log out |
 | `POST` | `/api/courses/enroll` | `{ username, courseIds: [] }` | Save enrolled courses |
+| `GET` | `/api/courses/enrolled?username=` | — | Get enrolled courses for a user |
 | `DELETE` | `/api/courses/enroll/:id` | `{ username }` | Remove one course |
 
 ---
@@ -19,13 +20,13 @@ Node.js + Express backend for the DecodeLabs Intern Portal.
 ## How to run
 
 ```bash
-npm install express
+npm install
 node server.js
 ```
 
 Opens at `http://localhost:3000`. Frontend files are served from `../frontend`.
 
-> Note: `users` and `enrollments` are stored in memory and reset on server restart. Project 3 (Database) will persist this data.
+> Requires MongoDB running on `localhost:27017`. Set the connection string in `.env`.
 
 ---
 
